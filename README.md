@@ -10,15 +10,17 @@ Everybody loves beauty, everything tries to achieve beauty through symmetry. To 
 writes inspirational poems in any given language and has a set of beautiful tools.
 
 A skilled craftsman will spend 60-70% of his times building and maintaining his tools while spending only 30-40% on
-the real work. If there is no personal care given to ones tools, one is simply a mindless worker a.k.a. coder.
+the real work. If there is no personal care given to one's tools, one is simply a mindless worker a.k.a. coder.
 
 History
 -------
 
-These dotfiles have been created, updated and maintained from my last 5 years of experience. This has been inspired by
-various hackers around the world, as my travels have given me ample opportunity to meet various people from various
+These dotfiles have been created, updated and maintained from last 5 years of my experience. This has been inspired by
+various hackers during my travels around the Earth, as my travels have given me ample opportunity to meet various people from various
 backgrounds, I find myself left with an awesome repository of various tools in various languages doing various
 different things.
+
+I look up to this as an essential summary, a churned out, refined nectar & plan to churn this till the end of my hacker life.
 
 Vision
 ------
@@ -26,6 +28,10 @@ Vision
 To have a one click setup for all of my tools related to my hacker ego; These tools should setup a ubiquitous environment
 on all major Linux/Mac/Windows platforms and provide me with more time to chill, relax, spend time with my friends & play
 music.
+
+- These tools should be a comprehensive set which should automate and delegate things off GUI to provide a context switch free
+work environment.
+- These tools should allow me to retain my focus and be in a meditative state of flow for as long as I wish to work.
 
 RoadMap
 -------
