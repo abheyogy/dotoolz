@@ -1,0 +1,21 @@
+#######   My ZSH RC file  #######
+# ############################# #
+# I like to keep things modular #
+# Could you blame me for that?  #
+# For hackers do this and that  #
+# # # # # # # # # # # # # # # # #
+# ############################# #
+
+# History
+setopt appendhistory
+HISTSIZE=7777777
+SAVEHIST=55555
+HISTFILE=~/.zsh_history
+
+
+# Using Zinit to manage ZSH
+source ${HOME}/.plugins.zsh
+source ${HOME}/.aliases.zsh
+source ${HOME}/.env.zsh
+
+setopt nocorrectall

@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+<	home/init.vim	/^    vnoremap < <gv$/;"	m
+<C-n>	home/init.vim	/^    map <C-n> :NERDTreeToggle<CR>	" NerdTree$/;"	m
+<Leader>n	home/init.vim	/^    nnoremap <Leader>n :NumbersToggle<CR>$/;"	m
+<down>	home/init.vim	/^  nnoremap <down> <nop>$/;"	m
+<leader>E	home/init.vim	/^    noremap <leader>E :qa<CR>    " Quit all windows$/;"	m
+<leader>GG	home/init.vim	/^    noremap <leader>GG :GitGutterLineHighlightsToggle<CR>$/;"	m
+<leader>W	home/init.vim	/^    noremap <leader>W :wq<CR>     " Save and quit$/;"	m
+<leader>e	home/init.vim	/^    noremap <leader>e :quit<CR>   " Quit current window$/;"	m
+<leader>f0	home/init.vim	/^    nmap <leader>f0 :set foldlevel=0<CR>$/;"	m
+<leader>f1	home/init.vim	/^    nmap <leader>f1 :set foldlevel=1<CR>$/;"	m
+<leader>f2	home/init.vim	/^    nmap <leader>f2 :set foldlevel=2<CR>$/;"	m
+<leader>f3	home/init.vim	/^    nmap <leader>f3 :set foldlevel=3<CR>$/;"	m
+<leader>f4	home/init.vim	/^    nmap <leader>f4 :set foldlevel=4<CR>$/;"	m
+<leader>f5	home/init.vim	/^    nmap <leader>f5 :set foldlevel=5<CR>$/;"	m
+<leader>f6	home/init.vim	/^    nmap <leader>f6 :set foldlevel=6<CR>$/;"	m
+<leader>f7	home/init.vim	/^    nmap <leader>f7 :set foldlevel=7<CR>$/;"	m
+<leader>f8	home/init.vim	/^    nmap <leader>f8 :set foldlevel=8<CR>$/;"	m
+<leader>f9	home/init.vim	/^    nmap <leader>f9 :set foldlevel=9<CR>$/;"	m
+<leader>fc	home/init.vim	/^    map <leader>fc \/\\v^[<\\|=>]{7}( .*\\|$)<CR>$/;"	m
+<leader>gb	home/init.vim	/^    nnoremap <silent> <leader>gb :Gblame<CR>$/;"	m
+<leader>gc	home/init.vim	/^    nnoremap <silent> <leader>gc :Gcommit<CR>$/;"	m
+<leader>gd	home/init.vim	/^    nnoremap <silent> <leader>gd :Gdiff<CR>$/;"	m
+<leader>ge	home/init.vim	/^    nnoremap <silent> <leader>ge :Gedit<CR>$/;"	m
+<leader>gg	home/init.vim	/^    noremap <leader>gg :GitGutterToggle<CR>$/;"	m
+<leader>gi	home/init.vim	/^    nnoremap <silent> <leader>gi :Git add -p%<CR>$/;"	m
+<leader>gl	home/init.vim	/^    nnoremap <silent> <leader>gl :Glog<CR>$/;"	m
+<leader>gp	home/init.vim	/^    nnoremap <silent> <leader>gp :Git push<CR>$/;"	m
+<leader>gr	home/init.vim	/^    nnoremap <silent> <leader>gr :Gread<CR>$/;"	m
+<leader>gs	home/init.vim	/^    nnoremap <silent> <leader>gs :Gstatus<CR>$/;"	m
+<leader>gw	home/init.vim	/^    nnoremap <silent> <leader>gw :Gwrite<CR>$/;"	m
+<leader>w	home/init.vim	/^    noremap <leader>w :w<CR>      " Quick save$/;"	m
+<left>	home/init.vim	/^  nnoremap <left> <nop>$/;"	m
+<right>	home/init.vim	/^  nnoremap <right> <nop>$/;"	m
+<space>	home/init.vim	/^    nnoremap <space> za$/;"	m
+<up>	home/init.vim	/^  nnoremap <up> <nop>$/;"	m
+>	home/init.vim	/^    vnoremap > >gv$/;"	m
+History	README.md	/^History$/;"	s
+I	home/tmux.conf	/^setw -g window-status-current-format " #F#I:#W#F "$/;"	k
+I	home/tmux.conf	/^setw -g window-status-format " #F#I:#W#F "$/;"	k
+LightlineFileformat	home/init.vim	/^function! LightlineFileformat()$/;"	f
+LightlineFiletype	home/init.vim	/^function! LightlineFiletype()$/;"	f
+Mouse	home/tmux.conf	/^bind-key M set-option -g mouse off \\; display 'Mouse: OFF'$/;"	k
+Mouse	home/tmux.conf	/^bind-key m set-option -g mouse on \\; display 'Mouse: ON'$/;"	k
+My dotools	README.md	/^My dotools$/;"	s
+Philosophy (Two Cents)	README.md	/^Philosophy (Two Cents)$/;"	s
+RoadMap	README.md	/^RoadMap$/;"	s
+S	home/tmux.conf	/^setw -g window-status-format " #T#S: "$/;"	k
+Vision	README.md	/^Vision$/;"	s
+configure_alacritty	init.sh	/^function configure_alacritty {$/;"	f
+configure_git	init.sh	/^function configure_git {$/;"	f
+configure_irc	init.sh	/^function configure_irc {$/;"	f
+configure_neovim	init.sh	/^function configure_neovim {$/;"	f
+configure_sway	init.sh	/^function configure_sway {$/;"	f
+configure_tmux	init.sh	/^function configure_tmux {$/;"	f
+configure_zsh	init.sh	/^function configure_zsh {$/;"	f
+dark	home/alacritty.yml	/^  solarized_dark: &dark$/;"	a
+g:NERDTreeDirArrowCollapsible	home/init.vim	/^  let g:NERDTreeDirArrowCollapsible = '▾'$/;"	v
+g:NERDTreeDirArrowExpandable	home/init.vim	/^  let g:NERDTreeDirArrowExpandable = '▸'$/;"	v
+g:ctrlp_cmd	home/init.vim	/^  let g:ctrlp_cmd = 'CtrlP'$/;"	v
+g:ctrlp_custom_ignore	home/init.vim	/^    let g:ctrlp_custom_ignore = '\\v[\\\/]\\.(git|hg|svn)$'$/;"	v
+g:ctrlp_custom_ignore	home/init.vim	/^    let g:ctrlp_custom_ignore = {$/;"	v
+g:ctrlp_map	home/init.vim	/^    let g:ctrlp_map = '<c-p>'$/;"	v
+g:ctrlp_max_height	home/init.vim	/^  let g:ctrlp_max_height = 30$/;"	v
+g:gitgutter_eager	home/init.vim	/^  let g:gitgutter_eager = 0$/;"	v
+g:gitgutter_enabled	home/init.vim	/^  let g:gitgutter_enabled = 1$/;"	v
+g:gitgutter_escape_grep	home/init.vim	/^  let g:gitgutter_escape_grep = 1$/;"	v
+g:gitgutter_highlight_linenrs	home/init.vim	/^  let g:gitgutter_highlight_linenrs = 1$/;"	v
+g:gitgutter_highlight_lines	home/init.vim	/^  let g:gitgutter_highlight_lines = 1$/;"	v
+g:gitgutter_realtime	home/init.vim	/^  let g:gitgutter_realtime = 0              " Maybe Default ...$/;"	v
+g:gitgutter_signs	home/init.vim	/^  let g:gitgutter_signs = 1$/;"	v
+g:lightline	home/init.vim	/^  let g:lightline = {$/;"	v
+g:numbers_exclude	home/init.vim	/^  let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']$/;"	v
+g:sls_use_jinja_syntax	home/init.vim	/^  let g:sls_use_jinja_syntax = 1$/;"	v
+g:syntastic_aggregate_errors	home/init.vim	/^  let g:syntastic_aggregate_errors = 1$/;"	v
+g:syntastic_always_populate_loc_list	home/init.vim	/^  let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	home/init.vim	/^  let g:syntastic_auto_loc_list = 1$/;"	v
+g:syntastic_check_on_open	home/init.vim	/^  let g:syntastic_check_on_open = 0$/;"	v
+g:syntastic_check_on_open	home/init.vim	/^  let g:syntastic_check_on_open = 1$/;"	v
+g:syntastic_check_on_wq	home/init.vim	/^  let g:syntastic_check_on_wq = 0$/;"	v
+g:syntastic_check_on_wq	home/init.vim	/^  let g:syntastic_check_on_wq = 1$/;"	v
+g:syntastic_haml_checkers	home/init.vim	/^  let g:syntastic_haml_checkers = ['haml', 'haml_lint']$/;"	v
+g:syntastic_json_checkers	home/init.vim	/^  let g:syntastic_json_checkers = ['jsonlint', 'jsonval']$/;"	v
+g:syntastic_markdown_checkers	home/init.vim	/^  let g:syntastic_markdown_checkers = ['mdl', 'proselint', 'textlint']$/;"	v
+g:syntastic_python_checkers	home/init.vim	/^  let g:syntastic_python_checkers = ['pylint']$/;"	v
+g:syntastic_rst_checkers	home/init.vim	/^  let g:syntastic_rst_checkers = ['proselint', 'rst2pseudoxml', 'rstcheck', 'sphinx']$/;"	v
+g:syntastic_sh_checkers	home/init.vim	/^  let g:syntastic_sh_checkers = ['shfmt']$/;"	v
+g:syntastic_yaml_checkers	home/init.vim	/^  let g:syntastic_yaml_checkers = ['yamllint', 'yamlxs']$/;"	v
+g:syntastic_zsh_checkers	home/init.vim	/^  let g:syntastic_zsh_checkers = ['zsh']$/;"	v
+gitroot	home/init.vim	/^  let gitroot = substitute(system('git rev-parse --show-toplevel'), '[\\n\\r]', '', 'g')$/;"	v
+j	home/init.vim	/^  nnoremap j gj$/;"	m
+k	home/init.vim	/^  nnoremap k gk$/;"	m
+light	home/alacritty.yml	/^  solarized_light: &light$/;"	a
+linkit	init.sh	/^function linkit {$/;"	f
+ll	home/zsh/aliases.zsh	/^alias ll='ls -l'$/;"	a
+main	init.sh	/^function main {$/;"	f
+mapleader	home/init.vim	/^  let mapleader=','$/;"	v
+repos	home/zsh/aliases.zsh	/^alias repos=$HOME\/repos$/;"	a
+rk8s	home/zsh/aliases.zsh	/^alias rk8s=$HOME\/Kubernetes$/;"	a
+rkubernetes	home/zsh/aliases.zsh	/^alias rkubernetes=$HOME\/Kubernetes$/;"	a
+rmargonw	home/zsh/aliases.zsh	/^alias rmargonw=$HOME\/rmargonw$/;"	a
+rmisc	home/zsh/aliases.zsh	/^alias rmisc=$HOME\/Misc$/;"	a
+rplayg	home/zsh/aliases.zsh	/^alias rplayg=$HOME\/PlayGround$/;"	a
+rplayground	home/zsh/aliases.zsh	/^alias rplayground=$HOME\/PlayGround$/;"	a
+rpocs	home/zsh/aliases.zsh	/^alias rpocs=$HOME\/Repositories\/$/;"	a
+rsalt	home/zsh/aliases.zsh	/^alias rsalt=$HOME\/SaltStack$/;"	a
+rsaltstack	home/zsh/aliases.zsh	/^alias rsaltstack=$HOME\/SaltStack$/;"	a
+t	home/tmux.conf	/^bind -T root WheelDownPane if-shell -F -t = "#{alternate_on}" "send-keys -M" "select-pane -t =; /;"	k
+t	home/tmux.conf	/^bind -T root WheelUpPane   if-shell -F -t = "#{alternate_on}" "send-keys -M" "select-pane -t =; /;"	k
+vim	home/zsh/aliases.zsh	/^alias vim=nvim$/;"	a
+w!!	home/init.vim	/^    cmap w!! w !sudo tee % >\/dev\/null$/;"	m
