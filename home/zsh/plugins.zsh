@@ -14,8 +14,8 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
 fi
 
 source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+#autoload -Uz _zinit
+#(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
@@ -32,58 +32,81 @@ zinit light-mode for \
 zinit for 					                      \
     light-mode zsh-users/zsh-autosuggestions      \
     light-mode zdharma/fast-syntax-highlighting   \
-	       zdharma/history-search-multi-word      \
+	           zdharma/history-search-multi-word  \
     light-mode pick"async.zsh" src"pure.zsh"      \
-               sindresorhus/pure                  \
+               sindresorhus/pure
+
+zinit ice from"gh-r" as"program"
+zinit light junegunn/fzf-bin
+
 zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-    atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+    atpull'%atclone' pick"clrs.zsh" nocompile'!'     \
     atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
 zinit light trapd00r/LS_COLORS
+
+zinit from"gh-r" as"program" mv"direnv* -> direnv"          \
+    atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' \
+    pick"direnv" src="zhook.zsh" for                        \
+        direnv/direnv
+
+zinit ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh' \
+    atinit'export PYENV_ROOT="$PWD"' atpull"%atclone" \
+    as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
+zinit light pyenv/pyenv
+
 zinit ice silent wait!1 atload"ZINIT[COMPINIT_OPTS]=-C; zpcompinit"
 zinit ice pick"h.sh"
 zinit light paoloantinori/hhighlighter
 
 # diff-so-fancy
 zinit ice wait"2" lucid as"program" pick"bin/git-dsf"
-zinit load zdharma/zsh-diff-so-fancy
+zinit light zdharma/zsh-diff-so-fancy
+
+zinit light zdharma/git-url
 
 # zsh-startify, a vim-startify like plugin
 zinit ice wait"0b" lucid atload"zsh-startify"
-zinit load zdharma/zsh-startify
+zinit light zdharma/zsh-startify
 
 # declare-zsh
 zinit ice wait"2" lucid
-zinit load zdharma/declare-zsh
+zinit light zdharma/declare-zsh
 
 # fzf-marks
 zinit ice wait lucid
-zinit load urbainvaes/fzf-marks
+zinit light urbainvaes/fzf-marks
 
 # zsh-autopair
 zinit ice wait lucid
-zinit load hlissner/zsh-autopair
+zinit light hlissner/zsh-autopair
 
 zinit ice wait"1" lucid
-zinit load psprint/zsh-navigation-tools
+zinit light psprint/zsh-navigation-tools
 
 # zdharma/history-search-multi-word
 zstyle ":history-search-multi-word" page-size "11"
 zinit ice wait"1" lucid
-zinit load zdharma/history-search-multi-word
+zinit light zdharma/history-search-multi-word
 
 # ZUI and Crasis
 zinit ice wait"1" lucid
-zinit load zdharma/zui
+zinit light zdharma/zui
 
 zinit ice wait'[[ -n ${ZLAST_COMMANDS[(r)cra*]} ]]' lucid
-zinit load zdharma/zinit-crasis
+zinit light zdharma/zinit-crasis
 
 # Gitignore plugin – commands gii and gi
 zinit ice wait"2" lucid
-zinit load voronkovich/gitignore.plugin.zsh
+zinit light voronkovich/gitignore.plugin.zsh
 
-zinit wait for \
-    atinit"zicompinit; zicdreplay" \
-        OMZ::{git,git-flow,git-fast,gitignore,git-extras,git-prompt,git-remote-branch} \
-	    OMZ::{pip,pep8,pyenv,python,pylint} \
-	    OMZ::{archlinux,debian,ssh-agent,docker,tmux,sudo,rsync,colorize,colored-man-pages}
+# Git plugin
+zinit light wfxr/forgit
+
+# Kubernetes aliases
+zinit light Dbz/kube-aliases
+
+#zinit wait for \
+#    atinit"zicompinit; zicdreplay" \
+#        OMZ::plugins/{git,git-flow,git-fast,gitignore,git-extras,git-prompt,git-remote-branch} \
+#        OMZ::{pip,pep8,pyenv,python,pylint} \
+#        OMZ::{archlinux,debian,ssh-agent,docker,tmux,sudo,rsync,colorize,colored-man-pages}

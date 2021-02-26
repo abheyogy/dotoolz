@@ -81,11 +81,11 @@ function configure_alacritty {
 function main {
     # Wrapper function to invoke functions in a particular order.
     configure_alacritty
-    #configure_git
+    configure_git
     configure_neovim
-    #configure_zsh
-    #configure_tmux
-    #configure_sway
+    configure_zsh
+    configure_tmux
+    configure_sway
     #configure_irc
 }
 

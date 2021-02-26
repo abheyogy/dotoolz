@@ -63,7 +63,7 @@ window:
   #startup_mode: Windowed
 
   # Window title
-  title: Hakuna Matata -- Margo N/W -- SugarBox -- JaggeryOS -- ButterOS
+  title: Hacker is busy. Shhh .....
 
   # Window class (Linux/BSD only):
   #class:
@@ -100,7 +100,7 @@ font:
     family: Input Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Mono Regular
 
   # Bold font face
   bold:
@@ -136,7 +136,7 @@ font:
     style: Mono Bold Italic
 
   # Point size
-  size: 12.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -263,7 +263,7 @@ colors: *dark
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '#ffffff'
@@ -298,7 +298,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  vi_mode_style: true
+  #vi_mode_style: true
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
