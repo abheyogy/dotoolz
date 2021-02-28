@@ -11,7 +11,7 @@ unset SSH_ASKPASS
 
 
 # Editor
-export EDITOR='vim'
+export EDITOR='nvim'
 export VISUAL='vi'
 
 # MacOS Set Locale related globals.

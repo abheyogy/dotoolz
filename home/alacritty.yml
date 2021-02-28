@@ -316,10 +316,11 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
-  program: /usr/bin/zsh
-  args:
-    - --login
+#NOTE: Seems to be slowing down git clones via. ssh protocol. Let's see if this works.
+#shell:
+#  program: /usr/bin/zsh
+#  args:
+#    - --login
 
 # Startup directory
 #

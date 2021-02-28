@@ -2,6 +2,7 @@
 
 # Vim to NeoVim ...
 alias vim=nvim
+
 # Lika ll!
 alias ll='ls -l'
 
@@ -14,13 +15,10 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 
 # Various handy paths
-alias repos=$HOME/repos
-alias rmargonw=$HOME/rmargonw
-alias rk8s=$HOME/Kubernetes
-alias rkubernetes=$HOME/Kubernetes
+alias repos=$HOME/Repos
 alias rmisc=$HOME/Misc
-alias rplayg=$HOME/PlayGround
-alias rplayground=$HOME/PlayGround
-alias rsalt=$HOME/SaltStack
-alias rsaltstack=$HOME/SaltStack
-alias rpocs=$HOME/Repositories/
+alias rplayg=$HOME/Repos/PlayGround
+alias rplayground=$HOME/Repos/PlayGround
+alias rsalt=$HOME/Repos/SaltStack
+alias rsaltstack=$HOME/Repos/SaltStack
+alias rpocs=$HOME/Repos/

@@ -79,6 +79,7 @@ call plug#end()
 syntax enable
 set nocompatible
 set background=light
+set t_Co=256
 
 " Load color theme if it exists.
   try
