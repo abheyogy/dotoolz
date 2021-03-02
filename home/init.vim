@@ -32,7 +32,7 @@ call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
-    Plug 'abheyogy/vim-colors-solarized'
+    Plug 'altercation/vim-colors-solarized'    " Issue with dark bg
     Plug 'vim-syntastic/syntastic'
 
   " Language support
@@ -45,7 +45,6 @@ call plug#begin()
     Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'
     Plug 'christoomey/vim-tmux-navigator'
-    Plug 'ludovicchabant/vim-gutentags'
     Plug 'rainerborene/vim-timetap'
     Plug 'vim-scripts/StripWhiteSpaces'
     Plug 'alvan/closetag.vim'
@@ -79,7 +78,6 @@ call plug#end()
 syntax enable
 set nocompatible
 set background=light
-set t_Co=256
 
 " Load color theme if it exists.
   try
