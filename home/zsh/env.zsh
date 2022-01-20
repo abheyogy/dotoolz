@@ -19,6 +19,7 @@ os_name=`uname`
 if [[ $os_name == "Darwin" ]]; then
 	export LC_ALL=en_US.UTF-8
 	export LANG=en_US.UTF-8
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # GoLango
