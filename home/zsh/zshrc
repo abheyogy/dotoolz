@@ -14,6 +14,7 @@ HISTFILE=~/.zsh_history
 
 
 # Using Zinit to manage ZSH
+source ${HOME}/.opts.zsh
 source ${HOME}/.plugins.zsh
 source ${HOME}/.aliases.zsh
 source ${HOME}/.env.zsh

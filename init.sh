@@ -50,6 +50,7 @@ function configure_zsh {
     linkit "${base_dir}/zsh/aliases.zsh" "${HOME}/.aliases.zsh"
     linkit "${base_dir}/zsh/plugins.zsh" "${HOME}/.plugins.zsh"
     linkit "${base_dir}/zsh/env.zsh" "${HOME}/.env.zsh"
+    linkit "${base_dir}/zsh/opts.zsh" "${HOME}/.opts.zsh"
 }
 
 function configure_git {
@@ -76,6 +77,7 @@ function configure_tmux {
 function configure_alacritty {
     echo "Configuring Alacritty terminal."
     linkit "${base_dir}/alacritty.yml" "${HOME}/.alacritty.yml"
+    linkit "${base_dir}/alacritty.yml" "${HOME}/.config/alacritty/alacritty.yml"
 }
 
 function main {

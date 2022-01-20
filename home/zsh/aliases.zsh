@@ -2,6 +2,7 @@
 
 # Vim to NeoVim ...
 alias vim=nvim
+alias tmux='tmux -u'
 
 # Lika ll!
 alias ll='ls -l'

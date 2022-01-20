@@ -2,13 +2,19 @@
 #  Environment could underly the following:
 #  	i. Operating System specifics
 #  	ii. Programming language & dependency specific
-#  	iii. Whatever else could have its own enviornment qualifies.
+#  	iii. Whatever else could have its own environment qualifies.
 
+## Path section
+# Set $PATH if ~/.local/bin exist
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH=$HOME/.local/bin:$PATH
+fi
 
-# Disable the pinetry GUI Window, if installed!
-unset GPG_AGENT_INFO
-unset SSH_ASKPASS
+## TODO(abheyogy): Please look into Starship in depth as time allows.
+# eval "$(starship init zsh)"
 
+# Replace yay with paru if installed
+[ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
 # Editor
 export EDITOR='nvim'
@@ -21,6 +27,9 @@ if [[ $os_name == "Darwin" ]]; then
 	export LANG=en_US.UTF-8
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+# automatically load bash completion functions
+autoload -U +X bashcompinit && bashcompinit
 
 # GoLango
 export GOPATH=$HOME/.go
