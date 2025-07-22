@@ -1,20 +1,42 @@
-## Set & unset various options here ...
+# Correction and globbing
+setopt correct
+setopt extendedglob
+setopt nocaseglob
+setopt numericglobsort
+setopt nobeep
 
-## Options section
-setopt correct                                                  # Auto correct mistakes
-setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
-setopt nocaseglob                                               # Case insensitive globbing
-setopt rcexpandparam                                            # Array expension with parameters
-setopt nocheckjobs                                              # Don't warn about running processes when exiting
-setopt numericglobsort                                          # Sort filenames numerically when it makes sense
-setopt nobeep                                                   # No beep
-setopt appendhistory                                            # Immediately append history instead of overwriting
-setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
-setopt autocd                                                   # if only directory path is entered, cd there.
+# Navigation
+setopt autocd
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
+setopt auto_name_dirs
+setopt cdable_vars
 
-# Disable the pinetry GUI Window, if installed!
+# Completion
+setopt always_to_end
+setopt auto_menu
+setopt complete_in_word
+setopt menu_complete
+setopt auto_list
+setopt auto_param_slash
+setopt complete_aliases
+setopt hash_list_all
+setopt list_ambiguous
+setopt list_types
+
+# History (extended options)
+setopt hist_expire_dups_first
+setopt hist_ignore_space
+setopt hist_verify
+setopt share_history
+setopt histignorealldups
+
+# Enhanced features
+setopt rcexpandparam
+setopt nocheckjobs
+setopt multios
+
+# Disable GUI prompts
 unset GPG_AGENT_INFO
 unset SSH_ASKPASS

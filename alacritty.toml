@@ -1,0 +1,120 @@
+# Alacritty Configuration
+# ====================
+
+# General Settings
+# ----------------
+[general]
+live_config_reload = true
+
+# Environment Variables
+# --------------------
+[env]
+TERM = "xterm-256color"
+EDITOR = "nvim"
+
+# Window Configuration
+# -------------------
+[window]
+title = "Radhe Radhe!"
+decorations = "none"
+dynamic_padding = true
+opacity = 0.97
+
+[window.padding]
+x = 1
+y = 1
+
+# Font Configuration
+# -----------------
+[font]
+size = 11.0
+
+[font.normal]
+family = "Input Mono"
+style = "Regular"
+
+[font.bold]
+family = "Input Mono"
+style = "Bold"
+
+[font.italic]
+family = "Input Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "Input Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 1
+y = 1
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+# Colors (Active Solarized Dark)
+# -----------------------------
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#002b36"
+foreground = "#839496"
+
+[colors.cursor]
+cursor = "#839496"
+text = "#002b36"
+
+[colors.normal]
+black = "#073642"
+red = "#dc322f"
+green = "#859900"
+yellow = "#b58900"
+blue = "#268bd2"
+magenta = "#d33682"
+cyan = "#2aa198"
+white = "#eee8d5"
+
+[colors.bright]
+black = "#586e75"
+red = "#cb4b16"
+green = "#586e75"
+yellow = "#657b83"
+blue = "#839496"
+magenta = "#6c71c4"
+cyan = "#93a1a1"
+white = "#fdf6e3"
+
+# Cursor Settings
+# ---------------
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+# Scrolling
+# ---------
+[scrolling]
+history = 100000
+multiplier = 3
+
+# Mouse Configuration
+# ------------------
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+mouse = "Middle"
+action = "PasteSelection"
+
+# Selection
+# ---------
+[selection]
+save_to_clipboard = true
+
+# Bell
+# ----
+[bell]
+animation = "EaseOutExpo"
+color = "#ffffff"
+duration = 25

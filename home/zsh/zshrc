@@ -1,22 +1,22 @@
-#######   My ZSH RC file  #######
-# ############################# #
-# I like to keep things modular #
-# Could you blame me for that?  #
-# For hackers do this and that  #
-# # # # # # # # # # # # # # # # #
-# ############################# #
+# Performance timing
+zmodload zsh/zprof
 
-# History
-setopt appendhistory
-HISTSIZE=7777777
-SAVEHIST=55555
+# History configuration
+HISTSIZE=50000
+SAVEHIST=50000
 HISTFILE=~/.zsh_history
 
-
-# Using Zinit to manage ZSH
+# Load configurations
 source ${HOME}/.opts.zsh
 source ${HOME}/.plugins.zsh
 source ${HOME}/.aliases.zsh
 source ${HOME}/.env.zsh
 
+# Disable autocorrect
 setopt nocorrectall
+
+# Performance profiling: uncomment to benchmark
+zprof
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/pundalika/.pulumi/bin

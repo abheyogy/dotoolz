@@ -72,3 +72,5 @@
 [branch]
   rebase = true
   autosetuprebase = always
+[init]
+	defaultBranch = main
