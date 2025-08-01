@@ -3,6 +3,8 @@ My dotools
 
 Most people call them dotfiles, I call them dotools.
 
+Note: Partially broken ZSH for Mac. Becareful there. Too busy to update my fixed Mac compatible Zsh files, will do it sometime soon.
+
 Philosophy (Two Cents)
 ----------------------
 
@@ -15,7 +17,7 @@ the real work. If there is no personal care given to one's tools, one is simply 
 History
 -------
 
-These dotfiles have been created, updated and maintained from last 5 years of my experience. This has been inspired by
+These dotfiles have been created, updated and maintained from last 15 years of my experience. This has been inspired by
 various hackers during my travels around the Earth, as my travels have given me ample opportunity to meet various people from various
 backgrounds, I find myself left with an awesome repository of various tools in various languages doing various
 different things.
